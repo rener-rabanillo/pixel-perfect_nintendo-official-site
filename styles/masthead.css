@@ -1,0 +1,129 @@
+#hamburger-icon {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 2rem;
+}
+
+#hamburger {
+  display: none;
+}
+
+#nintendo-logo, #nintendo-logo-link {
+  height: 5rem;
+}
+
+.nav-bar-icon {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 2px;
+}
+
+.nav-bar-text {
+  margin: 0 2px;
+  font-weight: bold;
+}
+
+.nav-bar-link {
+  padding: 0.625rem;
+  border-radius: 10px;
+}
+
+.nav-bar-link:hover {
+  transition: 0.3s;
+  transform: scale(0.9);
+  color: rgb(255, 255, 255);
+  background-color: rgb(230, 0, 18);
+}
+
+.nav-bar-link:not(:hover) {
+  transition: 0.3s;
+}
+
+.nav-bar-link:active {
+  transition: 0;
+  background-color: rgb(116, 0, 10);
+}
+
+.nav-bar-item>a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-bar-item {
+  margin: 0 2px;
+}
+
+#nav-bar>ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-decoration,
+input[type="search"]::-webkit-search-results-button {
+  display: none;
+}
+
+#search-text-entry {
+  border-style: none;
+  outline: none;
+  margin: 10px;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+#search-bar-icon {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 5px;
+}
+
+#search-bar-icon:active {
+  color: rgb(116, 0, 10);
+}
+
+#search-bar {
+  padding: 0 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 100px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#search-bar:hover {
+  transition: 0.2s;
+  color: rgb(230, 0, 18);
+}
+
+#search-bar:not(:hover) {
+  transition: 0.5s;
+}
+
+#masthead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 2px rgb(100, 100, 100);
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (max-width: 980px) {
+  #hamburger {
+    display: block;
+  }
+
+  #nav-bar, #search-bar {
+    display: none;
+  }
+}

@@ -1,0 +1,198 @@
+p {
+  text-indent: 0.5in;
+  text-align: justify;
+}
+
+#about-nintendo img {
+  width: 100%;
+}
+
+#about-nintendo p {
+  padding: 2rem 5rem;
+}
+
+#founders>h1, #history>h1 {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nintendo-president>figure>img {
+  width: 18vw;
+  height: 24vw;
+  border-radius: 10px;
+}
+
+figcaption {
+  max-width: 90%;
+  font-size: 80%;
+  text-align: left;
+  padding: 1rem;
+}
+
+.nintendo-president p {
+  padding: 0 2rem;
+}
+
+.nintendo-president {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#history h2 {
+  font-size: 1.2rem;
+}
+
+#history h2, #history p {
+  padding: 0.5rem 5rem;
+}
+
+#history div {
+  padding-bottom: 2rem;
+}
+
+#founders, #history {
+  border-top: 1px solid rgb(65, 69, 72, 0.5);
+  margin: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  #about-nintendo p {
+    padding: 2rem 2rem;
+  }
+
+  #history h2, #history p {
+    padding: 0.5rem 2rem;
+  }
+
+  .nintendo-president {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #founders {
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nintendo-president {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nintendo-president>figure>img {
+    width: 50vw;
+    height: 66.667vw;
+  }
+
+  #founders {
+    padding: 0 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #founders {
+    padding: 0 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #founders {
+    padding: 0;
+    display: grid;
+    grid-template-rows: 5vw 32vw 32vw 32vw;
+    grid-template-columns: 40vw 40vw;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  #founders>h1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (min-width: 2160px) {
+  .nintendo-president {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #founders {
+    padding: 0;
+    display: grid;
+    grid-template-rows: 5vw 42vw 42vw;
+    grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  #founders>h1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  #fusajiro-yamauchi {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #fusajiro-yamauchi img {
+    width: 36vw;
+    height: 48vw;
+  }
+
+  #tatsumi-kimishima {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  #shuntaro-furukawa {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+}

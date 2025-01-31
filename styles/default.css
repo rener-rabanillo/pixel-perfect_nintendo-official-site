@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Nintendo Switch UI';
+  src: url(../assets/fonts/nintendo-switch-ui.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Nintendo Switch UI', sans-serif;
+  font-size: 12px;
+  color: rgb(65, 69, 72);
+  
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(65, 69, 72);
+}
+
+/* For desktops and wide screen monitors */
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,26 @@
+#scroll-up-button-icon {
+  color: rgb(255, 255, 255);
+}
+
+#scroll-up-button {
+  transform: rotateZ(90deg);
+  height: 3rem;
+  width: 3rem;
+  border-style: none;
+  border-radius: 0.9375rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: rgb(230, 0, 18);
+  box-shadow: 0 0 5px 1px rgb(116, 0, 10);
+  display: none;
+}
+
+#scroll-up-button:hover {
+  cursor: pointer;
+  background-color: rgb(184, 0, 15);
+}
+
+#scroll-up-button:active {
+  background-color: rgb(116, 0, 10);
+}

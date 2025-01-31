@@ -1,0 +1,117 @@
+#featured-content-image {
+  width: 100%;
+}
+
+.featured-content-buttons {
+  height: 50%;
+  width: 3.5rem;
+  border-style: none;
+  position: absolute;
+  top: 25%;
+  background-color: rgb(65, 69, 72, 0.3);
+}
+
+.featured-content-button-icon {
+  color: rgb(255, 255, 255);
+}
+
+#featured-content-left-button {
+  left: 0;
+}
+
+#featured-content-right-button {
+  right: 0;
+}
+
+.featured-content-buttons:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: rgb(65, 69, 72, 0.6);
+}
+
+.featured-content-buttons:active {
+  background-color: rgb(65, 69, 72);
+}
+
+#featured-content-left-button:hover {
+  transition: 0.3s;
+}
+
+#featured-content-right-button:hover {
+  transition: 0.3s;
+}
+
+.featured-content-buttons:not(:hover) {
+  transition: 0.3s;
+}
+
+#featured-content-radio-buttons {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: calc((100% - ((69px / 100) * 100)) / 2);
+}
+
+#featured-content-radio-buttons>li {
+  margin: 10px 5px;
+}
+
+#featured-content {
+  position: relative;
+}
+
+#online-store img, #whats-new img {
+  width: 20rem;
+}
+
+.product, article, .container>a {
+  max-width: 21.25rem;
+  margin: 1rem;
+}
+
+.see-more-button {
+  all: unset;
+  width: 5rem;
+  height: 20rem;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(230, 0, 18);
+}
+
+.see-more-button:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: rgb(184, 0, 15);
+}
+
+.see-more-button:not(:hover) {
+  transition: 0.3s;
+}
+
+.see-more-button:active {
+  background-color: rgb(116, 0, 10);
+}
+
+section {
+  padding-bottom: 2.5rem;
+}
+
+#online-store, #whats-new {
+  padding: 0 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    padding: 0;
+    margin: 0;
+  }
+}

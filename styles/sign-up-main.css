@@ -1,0 +1,232 @@
+input[type="month"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+input[type="reset"] {
+  all: unset;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+input[type="month"],
+input[type="email"],
+input[type="password"] {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 3px 1px rgb(174, 174, 174) inset;
+}
+
+legend {
+  align-self: center;
+  justify-self: center;
+  font-weight: bold;
+}
+
+.input-field label {
+  font-size: 100%;
+  margin-bottom: 5px;
+}
+
+.input-field input {
+  width: 90%;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#sign-up-button, #cancel-button {
+  padding: 10px 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(230, 0, 18);
+}
+
+#cancel-button {
+  margin-left: 10px;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#sign-up-button:hover, #cancel-button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 37, 55);
+}
+
+#sign-up-button:active, #cancel-button:active {
+  background-color: rgb(116, 0, 10);
+}
+
+.input-field, .form-buttons {
+  margin: 0 20px;
+}
+
+#sign-up-form {
+  border: 10px solid white;
+  border-radius: 10px;
+}
+
+main {
+  padding: 5rem 10rem;
+  background-color: rgb(205, 250, 255);
+}
+
+@media screen and (max-width: 490px) {
+  .form-buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sign-up-button, #cancel-button {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #sign-up-form>* {
+    margin: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #sign-up-form {
+    display: grid;
+    grid-template-rows: 8vw 8vw 8vw 8vw;
+    grid-template-columns: 30vw 30vw;
+    justify-content: center;
+    padding: 1rem 2rem;
+  }
+
+  legend {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #date-of-birth {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #email {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  #password {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .buttonns {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #sign-up-form {
+    display: grid;
+    grid-template-rows: 5vw 5.2vw 5.2vw 5vw;
+    grid-template-columns: 30vw 30vw;
+    justify-content: center;
+    padding: 2rem 5rem;
+  }
+
+  legend {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #date-of-birth {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #email {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  #password {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .buttonns {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #sign-up-form {
+    display: grid;
+    grid-template-rows: 6vw 6vw 6vw 6vw;
+    grid-template-columns: 32.5vw 32.5vw;
+    justify-content: center;
+    padding: 2rem 5rem;
+  }
+
+  legend {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #date-of-birth {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #email {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  #password {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .buttonns {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
