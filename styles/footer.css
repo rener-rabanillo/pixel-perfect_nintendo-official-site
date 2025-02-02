@@ -42,6 +42,11 @@
   background-color: rgb(230, 0, 18);
 }
 
+#copyright small {
+  text-align: center;
+  margin: 10px 0;
+}
+
 #copyright {
   height: 6rem;
   display: flex;

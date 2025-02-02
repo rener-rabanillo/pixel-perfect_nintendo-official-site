@@ -78,15 +78,13 @@ main {
   background-color: rgb(205, 250, 255);
 }
 
-@media screen and (max-width: 490px) {
-  .form-buttons {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@media screen and (max-width: 500px) {
+  main {
+    padding: 5rem 2rem;
   }
 
   #sign-up-button, #cancel-button {
-    margin: 10px 0;
+    margin: 10px 10px 10px 0;
   }
 }
 
